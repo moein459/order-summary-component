@@ -59,6 +59,7 @@ main {
 .link {
     font-weight: 900;
     outline: 0;
+    transition: color .15s;
 }
 
 .link:hover,
@@ -73,6 +74,12 @@ main {
 
 .link--small {
     font-size: 1.2rem;
+}
+
+@media screen and (min-width: 600px) {
+    .link {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -96,7 +103,6 @@ main {
 }
 
 .btn--primary {
-    --color-priamry: hsl(245, 75%, 52%);
     background-color: var(--color-priamry);
     box-shadow: 0 12px 32px -2px rgba(56, 41, 224, .4);
     color: #fff;
@@ -119,7 +125,7 @@ main {
 
 .btn:last-of-type {
     margin-bottom: 0;
-    padding: 1rem 2.2rem .8rem;
+    padding: 1rem 2.2rem 1rem;
 }
 
 
@@ -167,7 +173,7 @@ main {
     background: hsl(225, 100%, 98%);
     padding: 1.6rem;
     border-radius: var(--border-radius);
-    margin: 2.2rem 0 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .plan .media {
@@ -194,7 +200,7 @@ main {
 /* Order Summary */
 
 .order-summary {
-    max-width: 450px;
+    max-width: 420px;
 }
 
 .order-summary_image {
@@ -207,4 +213,20 @@ main {
 
 .order-summary__heading {
     font-size: 2.35rem;
+}
+
+.order-summary__text {
+    width: 94%;
+    margin: 0 auto 2.2rem;
+}
+
+
+/* Attribution */
+
+.attribution {
+    margin: 4rem 0;
+    text-align: center;
+    color: var(--color-body);
+    font-size: 1.2rem;
+    opacity: .8;
 }
