@@ -36,3 +36,31 @@ p {
 .link--small {
     font-size: 1.5rem;
 }
+
+
+/* Buttons */
+
+.btn {
+    border-radius: 10px;
+    border: 0;
+    font-weight: 900;
+    margin: 8px 0;
+    padding: 1.9rem 2.2rem;
+}
+
+.btn--block {
+    display: inline-block;
+    width: 100%;
+}
+
+.btn--primary {
+    --color-priamry: hsl(245, 75%, 52%);
+    background-color: var(--color-priamry);
+    box-shadow: 0 10px 32px -2px rgba(56, 41, 224, .55);
+    color: #fff;
+}
+
+.btn--light {
+    background: transparent;
+    color: var(--color-body);
+}
