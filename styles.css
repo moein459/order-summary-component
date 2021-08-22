@@ -2,6 +2,7 @@
     --color-priamry: hsl(245, 75%, 52%);
     --color-body: hsl(224, 23%, 55%);
     --color-headings: hsl(223, 47%, 23%);
+    --border-radius: 10px;
 }
 
 html {
@@ -42,7 +43,7 @@ p {
 /* Buttons */
 
 .btn {
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     border: 0;
     font-weight: 900;
     margin: 8px 0;
@@ -91,4 +92,21 @@ p {
 
 .card__body {
     padding: 3rem;
+}
+
+
+/* Plan */
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(225, 100%, 98%);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin: 2.4rem 0;
+}
+
+.plan__description {
+    margin: 0;
 }
