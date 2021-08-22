@@ -5,6 +5,9 @@
     --border-radius: 10px;
 }
 
+
+/* Typography */
+
 html {
     font-size: 62.5%;
 }
@@ -13,16 +16,6 @@ body {
     font-family: 'Red Hat Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6rem;
     line-height: 1.6;
-    background: hsl(225, 100%, 94%) url(./images/pattern-background-mobile.svg) no-repeat;
-    background-size: 100% auto;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-main {
-    padding: 2.6rem;
 }
 
 h1,
@@ -34,6 +27,29 @@ h2 {
 
 p {
     color: var(--color-body);
+}
+
+
+/* Containers */
+
+body {
+    background: hsl(225, 100%, 94%) url(./images/pattern-background-mobile.svg) no-repeat;
+    background-size: 100% auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 2.4rem;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background: hsl(225, 100%, 94%) url(./images/pattern-background-desktop.svg) no-repeat;
+        background-size: 100% auto;
+    }
 }
 
 
@@ -61,6 +77,8 @@ p {
     font-weight: 900;
     margin: 12px 0;
     padding: 1.7rem 2.2rem;
+    cursor: pointer;
+    outline: 0;
 }
 
 .btn--block {
@@ -71,7 +89,7 @@ p {
 .btn--primary {
     --color-priamry: hsl(245, 75%, 52%);
     background-color: var(--color-priamry);
-    box-shadow: 0 10px 32px -2px rgba(56, 41, 224, .55);
+    box-shadow: 0 10px 32px -2px rgba(56, 41, 224, .4);
     color: #fff;
 }
 
@@ -107,10 +125,17 @@ p {
     border-radius: 18px;
     background: #fff;
     overflow: hidden;
+    box-shadow: 0 18px 40px -12px rgba(56, 41, 224, .275);
 }
 
 .card__body {
     padding: 2.3rem;
+}
+
+@media screen and (min-width: 600px) {
+    .card__body {
+        padding: 2.3rem 4.2rem;
+    }
 }
 
 
@@ -138,6 +163,7 @@ p {
 .plan__title {
     font-size: 1.5rem;
     margin-bottom: 0;
+    white-space: nowrap;
 }
 
 .plan__description {
