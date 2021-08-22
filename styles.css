@@ -1,5 +1,6 @@
 :root {
     --color-priamry: hsl(245, 75%, 52%);
+    --color-secondary: hsl(245deg 83% 68%);
     --color-body: hsl(224, 23%, 55%);
     --color-headings: hsl(223, 47%, 23%);
     --border-radius: 10px;
@@ -57,6 +58,13 @@ main {
 
 .link {
     font-weight: 900;
+    outline: 0;
+}
+
+.link:hover,
+.link:focus {
+    text-decoration: none;
+    color: var(--color-secondary);
 }
 
 .link--primary {
@@ -73,12 +81,13 @@ main {
 .btn {
     border-radius: var(--border-radius);
     border: 0;
+    cursor: pointer;
     font-size: 1.5rem;
     font-weight: 900;
     margin: 12px 0;
-    padding: 1.7rem 2.2rem;
-    cursor: pointer;
     outline: 0;
+    padding: 1.7rem 2.2rem;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
 .btn--block {
@@ -89,13 +98,23 @@ main {
 .btn--primary {
     --color-priamry: hsl(245, 75%, 52%);
     background-color: var(--color-priamry);
-    box-shadow: 0 10px 32px -2px rgba(56, 41, 224, .4);
+    box-shadow: 0 12px 32px -2px rgba(56, 41, 224, .4);
     color: #fff;
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+    background-color: var(--color-secondary);
 }
 
 .btn--light {
     background: transparent;
     color: var(--color-body);
+}
+
+.btn--light:hover,
+.btn--light:focus {
+    color: hsl(224deg 41% 16%);
 }
 
 .btn:last-of-type {
