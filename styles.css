@@ -21,3 +21,18 @@ h2 {
 p {
     color: var(--color-body);
 }
+
+
+/* Links */
+
+.link {
+    font-weight: 900;
+}
+
+.link--primary {
+    color: var(--color-priamry);
+}
+
+.link--small {
+    font-size: 1.5rem;
+}
